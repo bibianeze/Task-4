@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "es2016",                     // Sets the JavaScript version
+    "module": "commonjs",                   // Use CommonJS module syntax for Node.js compatibility
+    "strict": true,                         // Enable all strict type-checking options
+
+    /* Paths and File Structure */
+    "outDir": "./dist",                     // Output folder for compiled files
+    "rootDir": "./src",                     // Root folder for source files
+    "esModuleInterop": true,                // Allows for default import of CommonJS modules like `csv-parser`
+    "forceConsistentCasingInFileNames": true, // Enforce consistent import casing
+    "skipLibCheck": true                    // Skip type checking of .d.ts files for faster builds
+  },
+  "include": ["src/**/*"],                 // Include all TypeScript files in the src directory
+  "exclude": ["node_modules", "dist"]      // Exclude node_modules and dist folders
+}

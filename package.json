@@ -1,16 +1,23 @@
 {
   "name": "task-2",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A TypeScript project to read CSV files",
+  "main": "src/main.ts",
   "scripts": {
-    "dev": "nodemon index"
+    "dev": "nodemon --watch 'src/**/*.ts' --exec 'npx ts-node' src/main.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.1",
-    "nodemon": "^3.1.7"
+    "csv-parser": "^3.0.0",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.8.2",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
   }
 }
